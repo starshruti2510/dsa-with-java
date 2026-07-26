@@ -16,10 +16,10 @@ public class ThreeSum {
         Arrays.sort(nums);
         List<List<Integer>> arr = new ArrayList<>();
         int n = nums.length;
-        for(int i = 0; i < n - 2; i++) {
-            int j = i + 1, k = n - 1;
+        for(int i=0; i < n-2; i++) {
+            int j = i+1, k = n-1;
 
-            if(i > 0 && nums[i] == nums[i - 1]) {
+            if(i > 0 && nums[i] == nums[i-1]) {
                 continue;
             }
 
@@ -30,12 +30,14 @@ public class ThreeSum {
                     j++;
                     k--;
 
-                    while(j < k && nums[j] == nums[j - 1]) {
+                    while(j < k && nums[j] == nums[j-1]) {
                         j++;
                     }
-                } else if(sum < 0) {
+                }
+                else if(sum < 0) {
                     j++;
-                } else {
+                }
+                else {
                     k--;
                 }
             }
@@ -43,7 +45,7 @@ public class ThreeSum {
         return arr;
     }
     public static void main(String[] args) {
-        int[] nums = {9, -1, 0, 2, 0, 3, 7};
+        int[] nums = {-1,0,1,2,-1,-4};
         print(nums);
         List<List<Integer>> arr = threeSum(nums);
         System.out.println(arr);
