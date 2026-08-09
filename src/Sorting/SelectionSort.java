@@ -26,7 +26,7 @@ public class SelectionSort {
             nums[minIndex] = temp;
         }
 
-        Find Largest Element first
+        // Find Largest Element first
         int n = nums.length;
         for(int i=n-1; i>0; i--) {
             int max = Integer.MIN_VALUE, maxIndex = 0;
