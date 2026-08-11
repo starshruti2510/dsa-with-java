@@ -16,7 +16,6 @@ public class CommonNumbers {
         for(int i : nums1) {
             arr1[i] = true;
         }
-
         for(int i : nums2) {
             arr2[i] = true;
         }
