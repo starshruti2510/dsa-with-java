@@ -11,10 +11,9 @@ public class kthSmallest {
     public static int kthsmallestElement(int[] nums, int k) {
         int n = nums.length;
         for(int i=0; i < k; i++) {
-            int min = Integer.MIN_VALUE, minIndex = -1;
-
-            for(int j = 0; j <= i; j++) {
-                if(nums[j] < max) {
+            int min = Integer.MAX_VALUE, minIndex = -1;
+            for(int j=0; j <= n-1; j++) {
+                if(nums[j] < min) {
                     min = nums[j];
                     minIndex = j;
                 }
