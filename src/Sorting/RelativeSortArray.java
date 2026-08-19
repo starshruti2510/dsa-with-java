@@ -1,5 +1,7 @@
 package src.Sorting;
 
+import src.Arrays.ArrayList.arraylist;
+
 public class RelativeSortArray {
     public static void print(int[] nums) {
         for(int i : nums) {
