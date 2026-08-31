@@ -27,7 +27,7 @@ public class SortArrayByParity {
         return nums;
     }
     public static void main(String[] args) {
-        int[] nums = {5, 2, 8, 1, 3, 10};
+        int[] nums = {3,1,2,4};
         print(nums);
         sortByParity(nums);
         print(nums);
