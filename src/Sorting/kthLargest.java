@@ -12,7 +12,6 @@ public class kthLargest {
         int n = nums.length;
         for(int i = k; i >= 0; i--) {
             int max = Integer.MIN_VALUE, maxIndex = 0;
-
             for(int j = 0; j <= i; j++) {
                 if(nums[j] > max) {
                     max = nums[j];
@@ -23,7 +22,6 @@ public class kthLargest {
             nums[i] = nums[maxIndex];
             nums[maxIndex] = temp;
         }
-
         return nums[k-1];
     }
     public static void main(String[] args) {
