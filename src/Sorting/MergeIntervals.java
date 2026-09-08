@@ -21,7 +21,6 @@ public class MergeIntervals {
             int[] interval = intervals[i];              // Created an array to store all interval in it.
             if(interval[0] <= prev[1]) {                // If starting element of one interval is small than end element go interval
                 prev[1] = Math.max(prev[1], interval[1]);           // Then the end gets replaced from the maximum element from the intervals
-
             }
             else {
                 merge1.add(prev);                   // If they don't overlap then we simple merge the intervals
