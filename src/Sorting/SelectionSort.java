@@ -27,21 +27,21 @@ public class SelectionSort {
         }
 
         // Find Largest Element first
-        int n = nums.length;
-        for(int i=n-1; i>0; i--) {
-            int max = Integer.MIN_VALUE, maxIndex = 0;
+        // int n = nums.length;
+        // for(int i=n-1; i>0; i--) {
+        //     int max = Integer.MIN_VALUE, maxIndex = 0;
 
-            for(int j=0; j<=i; j++) {
-                if(nums[j] > max) {
-                    max = nums[j];
-                    maxIndex = j;
-                }
-            }
+        //     for(int j=0; j<=i; j++) {
+        //         if(nums[j] > max) {
+        //             max = nums[j];
+        //             maxIndex = j;
+        //         }
+        //     }
 
-            int temp = nums[i];
-            nums[i] = nums[maxIndex];
-            nums[maxIndex] = temp;
-        }
+        //     int temp = nums[i];
+        //     nums[i] = nums[maxIndex];
+        //     nums[maxIndex] = temp;
+        // }
     }
     public static void main(String[] args) {
         int[] nums = {5, -2, 3, 9, -1, 8, 0, 4};
